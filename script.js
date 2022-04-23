@@ -21,9 +21,18 @@ $(document).ready(function () {
                 document.getElementById('vidAnimal').play();
             }
             else if (destination.index == 4) {
-                document.getElementById('vidEscaperoom').play();
+                document.getElementById('vidVac').play();
             }
             else if (destination.index == 5) {
+                document.getElementById('vidXdPortfolio').play();
+            }
+            else if (destination.index == 6) {
+                document.getElementById('vidXdWeb').play();
+            }
+            else if (destination.index == 10) {
+                document.getElementById('vidEscaperoom').play();
+            }
+            else if (destination.index == 11) {
                 document.getElementById('vidNamecard').play();
             }
             else {
@@ -32,7 +41,7 @@ $(document).ready(function () {
         },
 
         //Anchors for nav
-        anchors: ['section1', 'section2', 'section3', 'section4'],
+        anchors: ['home', 'sd1', 'sd2', 'sd3','d1','d2','d3','d4','d5','d6','vr1','vr2'],
 
     });
     //disable mousewheel scrolling
@@ -46,18 +55,8 @@ $('.carousel').carousel({
 
 //Animate
 anime({
-    targets: '#slash',
-    keyframes: [
-        { translateY: [-1000, 0], opacity: [0, 1], endDelay: 5000 },
-        { translateY: [0, 800], opacity: [1, 0] }
-    ],
-    duration: 3000,
-    easing: 'easeOutElastic',
-    loop: true
-});
-
-anime({
     targets: '.bTextStagger',
+    duration: 2000,
     easing: 'easeOutElastic(1, .6)',
     translateY: [-100, 0],
     opacity: [0, 1],
