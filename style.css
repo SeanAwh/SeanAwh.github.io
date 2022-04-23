@@ -1,0 +1,84 @@
+body {
+    background-color: #e9c46a;
+    color: #FEFCFB;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    position: absolute;
+    z-index: 999;
+    height: initial;
+    background-color: #e76f51;
+}
+
+nav a {
+    font-size: larger;
+    color: #FEFCFB;
+}
+
+nav a:hover{
+    color: #f4a261;
+}
+
+nav #Logo {
+    height: 70px;
+}
+
+.dropdown-menu{
+    background-color: #f4a261;
+}
+
+.dropdown-menu a{
+    color: #FEFCFB;
+}
+
+.dropdown-menu a:hover{
+    color: #e76f51;
+}
+
+.banner svg {
+    width: 200px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.bText {
+    height: 414px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    /* override other styles to make responsive */
+    width: 100% !important;
+    height: auto !important;
+}
+
+video{
+    max-height: 554px;
+}
+
+.item img {
+    max-height: 250px;
+}
+
+
+.cbanner{
+    border-radius: 80px;
+    background-color: #264653;
+}
+
+#fp-nav ul li a span{
+    background: #FEFCFB;
+}
+
+#Logo-svg path {
+    stroke-dasharray: 8915;
+    stroke-dashoffset: 0;
+}
+
+
+@media only screen and (max-width: 992px) {}
