@@ -11,28 +11,28 @@ $(document).ready(function () {
             if (destination.index == 0) {
 
             }
-            else if (destination.index == 1) {
+            else if (destination.index == 2) {
                 document.getElementById('vidQuiz').play();
             }
-            else if (destination.index == 2) {
+            else if (destination.index == 3) {
                 document.getElementById('vidCovid').play();
             }
-            else if (destination.index == 3) {
+            else if (destination.index == 4) {
                 document.getElementById('vidAnimal').play();
             }
-            else if (destination.index == 4) {
+            else if (destination.index == 5) {
                 document.getElementById('vidVac').play();
             }
-            else if (destination.index == 5) {
+            else if (destination.index == 6) {
                 document.getElementById('vidXdPortfolio').play();
             }
-            else if (destination.index == 6) {
+            else if (destination.index == 7) {
                 document.getElementById('vidXdWeb').play();
             }
-            else if (destination.index == 10) {
+            else if (destination.index == 11) {
                 document.getElementById('vidEscaperoom').play();
             }
-            else if (destination.index == 11) {
+            else if (destination.index == 12) {
                 document.getElementById('vidNamecard').play();
             }
             else {
@@ -41,7 +41,7 @@ $(document).ready(function () {
         },
 
         //Anchors for nav
-        anchors: ['home', 'sd1', 'sd2', 'sd3','d1','d2','d3','d4','d5','d6','vr1','vr2'],
+        anchors: ['home', 'about','sd1', 'sd2', 'sd3','d1','d2','d3','d4','d5','d6','vr1','vr2','contact'],
 
     });
     //disable mousewheel scrolling
@@ -81,3 +81,39 @@ anime({
                 autoplay:true
             })
 });
+
+        // Define chart labels
+        const labels = [
+            'HTML/CSS',
+            'Wordpress',
+            'Javascript',
+            'Adobe XD',
+            'Illustrator',
+            'Photoshop'
+        ];
+
+        // Set labels, colours and data
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Knowledge & Skills',
+                backgroundColor: 'rgb(231,111,81)',
+                borderColor: 'rgb(245,229,251)',
+                data: [9, 4, 7, 8, 4, 3, 10]
+            }]
+        };
+
+        // Configure chart
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                indexAxis: 'y'
+            }
+        };
+
+        // Render chart in <canvas>
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );

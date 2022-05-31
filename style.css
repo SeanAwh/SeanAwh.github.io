@@ -80,5 +80,22 @@ video{
     stroke-dashoffset: 0;
 }
 
+.contact i {
+    font-size: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+.contact a{
+    text-decoration: none;
+    color:#FEFCFB;
+}
+.contact a:hover{
+    text-decoration: none;
+    color:#264653;
+}
+
+.element-wrap .element.blue {
+    color: #007FC7;
+}
 @media only screen and (max-width: 992px) {}
